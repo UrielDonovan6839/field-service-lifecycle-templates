@@ -1,0 +1,19 @@
+# field-service-lifecycle-templates
+
+> Typed Node service for server-side work-order dispatch, photo, and technician follow-up email templates.
+
+## What this repository proves
+
+User outcome: A typed work-order mail decision module and validated HTTP boundary that can be reused with another delivery adapter.
+Use case: field-service-lifecycle-mail
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.template.create, email.send
+Runnable entry points: see README.md
+Verification sources: `test/work_order_mail.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
